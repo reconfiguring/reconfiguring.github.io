@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://lu.github.io</id>
+    <title>世事无常</title>
+    <updated>2020-07-11T05:38:34.119Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://lu.github.io"/>
+    <link rel="self" href="https://lu.github.io/atom.xml"/>
+    <subtitle>珍惜当下，展望未来</subtitle>
+    <logo>https://lu.github.io/images/avatar.png</logo>
+    <icon>https://lu.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, 世事无常</rights>
+    <entry>
+        <title type="html"><![CDATA[Windows 清除在使用中的COM口编号]]></title>
+        <id>https://lu.github.io/post/windows-qing-chu-zai-shi-yong-zhong-de-com-kou-bian-hao/</id>
+        <link href="https://lu.github.io/post/windows-qing-chu-zai-shi-yong-zhong-de-com-kou-bian-hao/">
+        </link>
+        <updated>2020-07-11T05:25:32.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>开始 --&gt;&gt; 在运行中输入：regedit  --&gt;&gt; 回车打开系统注册表  --&gt;&gt;  修改注册表对应的目录值如下：</strong></p>
+<p><em>HKEY_LOCAL_MACHINE<br>
+        --&gt;&gt; SYSTEM<br>
+                --&gt;&gt; CurrentControlSet<br>
+                        --&gt;&gt; Control<br>
+                                --&gt;&gt; COM Name Arbiter</em></p>
+<p>打开COM Name Arbiter如下图</p>
+<figure data-type="image" tabindex="1"><img src="https://lu.github.io/post-images/1594445253938.png" alt="" loading="lazy"></figure>
+<p><font color=#0099ff>把ComDB的十六进制数据修改为0或者删除。</font></p>
+<p><u>  注：这样会重置所有COM编号，至于原先对应的的COM口驱动还是在的。</u></p>
+]]></content>
+    </entry>
+</feed>
